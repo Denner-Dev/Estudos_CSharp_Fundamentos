@@ -7,24 +7,18 @@ namespace Arquivos_TXT_Basico
     {
         static void Main(string[] args)
         {
-            string path = "dados.txt";
+            string caminho = "exemplo.txt";
+            string texto = "Linha 1\nLinha 2\nLinha 3";
 
             // Escreve todo o conteúdo (sobrescreve o arquivo se existir).
-            File.WriteAllText(path, "Ola mundo!\nEssa e uma linha.");
+            File.WriteAllText(caminho, texto);
 
-            // Anexa uma nova linha ao arquivo existente.
-            File.AppendAllText(path, "\nLinha extra adicionada.");
+            Console.WriteLine("Arquivo TXT criado!");
 
             // Lê todo o conteúdo do arquivo como uma string.
-            string conteudo = File.ReadAllText(path);
-            Console.WriteLine("Conteudo completo:");
+            string conteudo = File.ReadAllText("exemplo.txt");
+            Console.WriteLine("Conteúdo do arquivo:");
             Console.WriteLine(conteudo);
-
-            // Lê o arquivo linha a linha para um array de strings.
-            string[] linhas = File.ReadAllLines(path);
-            Console.WriteLine($"\nNumero de linhas: {linhas.Length}");
-            foreach (var linha in linhas)
-                Console.WriteLine("=> " + linha);
         }
     }
 }
