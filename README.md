@@ -1,60 +1,104 @@
-# Estudos C# – Fundamentos
+# 📚 Estudos C# Fundamentos
 
-Este repositório contém diversos projetos criados durante meus estudos de C# e Programação Orientada a Objetos. O objetivo é registrar minha evolução, praticar lógica de programação e consolidar conhecimentos fundamentais da linguagem.
+Repositório com projetos de estudo e prática de C#, cobrindo desde conceitos básicos até padrões orientados a objetos avançados.
 
-## 📌 Conteúdo do Repositório
+## 🎯 Objetivo
 
-Os diretórios representam temas e exercícios diferentes, incluindo:
+Consolidar conhecimentos em C# através de projetos práticos, com foco em:
+- Fundamentos da linguagem
+- Programação Orientada a Objetos
+- Manipulação de arquivos
+- Exceções e tratamento de erros
+- Padrões de design
 
-* **Tratamento de Exceções**
-* **POO – Herança** (Banco, Biblioteca, Veículos, Eletrônicos, etc.)
-* **POO – Interfaces** (Pagamentos, Transportes, Impressoras)
-* **Construtores e Criação de Objetos**
-* **Manipulação de Arquivos TXT**
-* **Manipulação de Arquivos CSV**
-* **Uso do StreamReader e StreamWriter**
-* **Solução `.sln` com todos os projetos organizados**
+## 🗂️ Estrutura de Projetos
 
-Cada pasta contém um projeto independente, criado no Visual Studio 2022.
+### Fundamentos
+- **Construtores** - Objetos, construtores paramétricos e sobrecarga
 
----
+### Arquivos e I/O
+- **Arquivos_TXT_Basico** - Leitura e escrita de arquivos de texto
+- **Arquivos_TXT_StreamReader** - Usando StreamReader para processamento
+- **Arquivos_TXT_GerenciadorTarefas** - Aplicação de gerenciamento
+- **Arquivos_TXT_GerenciadorAnotacoes** - Sistema de anotações
+- **Arquivos_JSON_Basico** - Serialização JSON
+- **Arquivos_CSV_Extracao** - Processamento de CSV
+- **Arquivos_CSV_CadastroProdutos** - Cadastro baseado em CSV
 
-## 🛠️ Tecnologias Utilizadas
+### Exceções
+- **Excecoes_TratamentoBasico** - Try-catch-finally, exceções personalizadas
 
-* **C#**
-* **.NET / .NET Core**
-* **Visual Studio 2022**
-* Manipulação de arquivos (**TXT, CSV**)
-* Programação Orientada a Objetos
+### POO (Programação Orientada a Objetos)
+- **Herança**
+  - POO_Heranca_Banco - Sistema bancário com herança
+  - POO_Heranca_Biblioteca - Sistema de biblioteca
+  - POO_Heranca_Eletronicos - Eletrônicos e suas categorias
+  - POO_Heranca_FuncionariosBonus - Cálculo de bônus
+  - POO_Heranca_Veiculos - Hierarquia de veículos
 
----
+- **Interfaces**
+  - POO_Interfaces_Impressoras - Sistema de impressoras
+  - POO_Interfaces_Pagamentos - Sistema de pagamentos
+  - POO_Interfaces_Transportes - Sistema de transportes
 
-## 🎯 Objetivo do Repositório
+## 🛠️ Tecnologias
 
-Este repositório serve como:
+- C# 11
+- .NET 6+
+- Visual Studio 2022 / VS Code
+- Conceitos de POO
 
-* Meu local de estudo e prática.
-* Histórico da minha evolução em C#.
-* Base para revisar conteúdos importantes.
+## 🚀 Como Executar um Projeto
 
----
+### Pré-requisitos
+- .NET 6 ou superior
+- Visual Studio 2022 ou VS Code com C# Dev Kit
 
-## 📚 Próximos Estudos
+### Instalação
 
-* Collections (List, Dictionary, etc.)
-* LINQ
-* ASP.NET MVC e Entity Framework
-* Boas práticas de arquitetura
+```bash
+git clone https://github.com/Denner-Dev/estudos-csharp-fundamentos.git
+cd Estudos_CSharp_Fundamentos
+```
 
----
+### Executar Solução
 
-## 📎 Observações
+```bash
+# Abrir solução
+# Selecionar projeto na dropdown
+# Pressionar F5 ou Ctrl+F5
 
-Alguns projetos são básicos e construídos apenas para fins de aprendizado. A tendência é que o repositório evolua com o tempo, com melhorias no código e novos desafios.
+# Ou via CLI
+dotnet build
+dotnet run --project "NomeDoProjeto/NomeDoProjeto.csproj"
+```
 
----
+## 📖 Conceitos Cobertos
 
-## 📬 Contato
+| Tópico | Status |
+|--------|--------|
+| Tipos de Dados Básicos | ✅ |
+| Estruturas de Controle | ✅ |
+| Funções e Métodos | ✅ |
+| Classes e Objetos | ✅ |
+| Construtores | ✅ |
+| Herança | ✅ |
+| Polimorfismo | ✅ |
+| Interfaces | ✅ |
+| Exceções | ✅ |
+| Arquivos | ✅ |
+| JSON | ✅ |
+| CSV | ✅ |
 
-Caso queira conversar sobre programação:
-**GitHub:** [https://github.com/Denner-Dev](https://github.com/Denner-Dev)
+## 📝 Próximos Estudos
+
+- [ ] LINQ
+- [ ] Async/Await
+- [ ] Generics
+- [ ] Delegates e Events
+- [ ] Reflection
+- [ ] Entity Framework Core
+
+##  Licença
+
+MIT
